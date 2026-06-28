@@ -68,7 +68,7 @@
     const Loader2 = (p) => <Icon {...p} className={`animate-spin ${p.className||""}`} path={<><path d="M21 12a9 9 0 1 1-6.219-8.56"/></>} />;
 
     // ★★★ ここにデプロイしたGASのウェブアプリURLを貼り付けてください ★★★
-    const GAS_URL = "https://script.google.com/macros/s/AKfycbzClAeFMHgDcHRsthJ275G7wfChOIiHhG7FrxXK3nvGAHDVbhOoq-SEcSwZolA1CAr3/exec";
+    const GAS_URL = "https://script.google.com/macros/s/AKfycbzxf6_kFwUkPWjKEGNznED5DgSiwNnUlAkc4hRAMG1bgpXleGtVIYjoJUWsIwA4nQvV/exec";
 
     const CATEGORIES = ['ドライフード', 'ウェットフード', 'おやつ', 'トイレ用品', 'ケア用品', 'おもちゃ', 'その他'];
 
@@ -142,7 +142,7 @@
 
       // 1. 初期ロード時: GASからスプレッドシートのデータを取得
       useEffect(() => {
-        if (GAS_URL === "https://script.google.com/macros/s/AKfycbzClAeFMHgDcHRsthJ275G7wfChOIiHhG7FrxXK3nvGAHDVbhOoq-SEcSwZolA1CAr3/exec") {
+        if (GAS_URL === "https://script.google.com/macros/s/AKfycbzxf6_kFwUkPWjKEGNznED5DgSiwNnUlAkc4hRAMG1bgpXleGtVIYjoJUWsIwA4nQvV/exec") {
           setIsLoading(false);
           showToast("【注意】GASのURLが設定されていません");
           return;
@@ -165,7 +165,7 @@
 
       // GASへPOSTリクエストを送信する関数 (非同期でバックグラウンド実行)
       const postToGAS = (action, data) => {
-        if (GAS_URL === "https://script.google.com/macros/s/AKfycbzClAeFMHgDcHRsthJ275G7wfChOIiHhG7FrxXK3nvGAHDVbhOoq-SEcSwZolA1CAr3/exec") return;
+        if (GAS_URL === "https://script.google.com/macros/s/AKfycbzxf6_kFwUkPWjKEGNznED5DgSiwNnUlAkc4hRAMG1bgpXleGtVIYjoJUWsIwA4nQvV/exec") return;
         
         fetch(GAS_URL, {
           method: 'POST',
