@@ -53,7 +53,7 @@
     } = lucideReact;
 
     // ★★★ ここにデプロイしたGASのウェブアプリURLを貼り付けてください ★★★
-    const GAS_URL = "https://script.google.com/macros/s/AKfycbzxf6_kFwUkPWjKEGNznED5DgSiwNnUlAkc4hRAMG1bgpXleGtVIYjoJUWsIwA4nQvV/exec";
+    const GAS_URL = "https://script.google.com/macros/s/AKfycbzClAeFMHgDcHRsthJ275G7wfChOIiHhG7FrxXK3nvGAHDVbhOoq-SEcSwZolA1CAr3/exec";
 
     const CATEGORIES = ['ドライフード', 'ウェットフード', 'おやつ', 'トイレ用品', 'ケア用品', 'おもちゃ', 'その他'];
 
@@ -127,7 +127,7 @@
 
       // 1. 初期ロード時: GASからスプレッドシートのデータを取得
       useEffect(() => {
-        if (GAS_URL === "https://script.google.com/macros/s/AKfycbzxf6_kFwUkPWjKEGNznED5DgSiwNnUlAkc4hRAMG1bgpXleGtVIYjoJUWsIwA4nQvV/exec") {
+        if (GAS_URL === "ここにGASのウェブアプリURLを貼り付けます") {
           setIsLoading(false);
           showToast("【注意】GASのURLが設定されていません");
           return;
